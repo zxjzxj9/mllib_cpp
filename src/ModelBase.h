@@ -7,7 +7,8 @@
 
 
 class ModelBase {
-    virtual fit()
+    virtual fit() = 0;
+    virtual fit_transform = 0;
 };
 
 
