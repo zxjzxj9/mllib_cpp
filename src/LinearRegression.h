@@ -7,7 +7,12 @@
 #include <armadillo>
 
 class LinearRegression {
+public:
+    LinearRegression(int n_feature, int n_target);
 
+private:
+    arma::mat weight;
+    arma::mat bias;
 };
 
 

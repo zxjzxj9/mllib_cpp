@@ -4,11 +4,12 @@
 
 #ifndef MLLIB_CPP_MODELBASE_H
 #define MLLIB_CPP_MODELBASE_H
-
+#include <armadillo>
 
 class ModelBase {
-    virtual fit() = 0;
-    virtual fit_transform = 0;
+public:
+    virtual void fit(arma::mat feature, arma::mat target) = 0;
+    virtual arma::mat fit_transform(arma::mat feature, arma::mat targe) = 0;
 };
 
 
