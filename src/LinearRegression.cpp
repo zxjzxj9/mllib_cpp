@@ -3,3 +3,7 @@
 //
 
 #include "LinearRegression.h"
+
+arma::mat LinearRegression::fit_transform(arma::mat feature, arma::mat target) {
+    return arma::mat();
+}
