@@ -16,9 +16,11 @@ public:
     arma::mat fit_transform(arma::mat feature, arma::mat target) override;
 
 private:
+    int n_feature;
+    int n_target;
+    bool has_bias;
     arma::mat weight;
     arma::mat bias;
-    bool has_bias;
 };
 
 
