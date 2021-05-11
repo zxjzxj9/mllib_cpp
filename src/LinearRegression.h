@@ -19,8 +19,9 @@ private:
     int n_feature;
     int n_target;
     bool has_bias;
-    arma::mat weight;
-    arma::mat bias;
+    arma::mat weight_; // weight of lm
+    arma::mat bias_; // bias of lm
+    double corr_; // correlation factors of lm
 };
 
 
