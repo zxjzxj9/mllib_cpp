@@ -14,13 +14,20 @@ public:
     void fit(arma::mat feature, arma::mat target) override;
 
     arma::mat fit_transform(arma::mat feature, arma::mat target) override;
+    int getNFeature() const;
+    int getNTarget() const;
+    bool isHasBias() const;
+    const arma::mat &getWeight() const;
+    const arma::mat &getBias() const;
+    double getCorr() const;
 
 private:
     int n_feature;
     int n_target;
     bool has_bias;
-    arma::mat weight_; // weight of lm
-    arma::mat bias_; // bias of lm
+    // weight & bias of lm
+    arma::mat weight_;
+    arma::mat bias_;
     double corr_; // correlation factors of lm
 };
 

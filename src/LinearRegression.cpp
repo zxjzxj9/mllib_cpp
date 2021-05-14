@@ -31,3 +31,27 @@ void LinearRegression::fit(arma::mat feature, arma::mat target) {
 
 
 }
+
+int LinearRegression::getNFeature() const {
+    return n_feature;
+}
+
+int LinearRegression::getNTarget() const {
+    return n_target;
+}
+
+const arma::mat &LinearRegression::getWeight() const {
+    return weight_;
+}
+
+bool LinearRegression::isHasBias() const {
+    return has_bias;
+}
+
+const arma::mat &LinearRegression::getBias() const {
+    return bias_;
+}
+
+double LinearRegression::getCorr() const {
+    return corr_;
+}
